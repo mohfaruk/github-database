@@ -1,8 +1,7 @@
-import { Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import Spinner from "../Layouts/Spinner";
 import { useEffect, useContext } from "react";
 import GithubContext from "../../contexts/github/GithubContext";
-import { useParams } from "react-router-dom";
 
 function Profile() {
   const { loadProfile, profile, loading } = useContext(GithubContext);

@@ -1,6 +1,7 @@
-import { useState, useContext, useReducer } from "react";
+import { useState, useContext } from "react";
 import GithubContext from "../../contexts/github/GithubContext";
 import AlertContext from "../../contexts/alert/AlertContext";
+//import { searchProfiles } from "../../contexts/github/GithubContext";
 
 function ProfileSearch() {
   const [text, setText] = useState("");

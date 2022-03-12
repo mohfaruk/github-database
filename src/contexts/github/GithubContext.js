@@ -7,8 +7,6 @@ const GITHUB_URL = process.env.REACT_APP_GITHUB_URL;
 const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN;
 
 export const GithubProvider = ({ children }) => {
-  // const [profiles, setProfiles] = useState([]);
-  // const [isLoading, setIsLoading] = useState(false);
   const initialState = {
     profiles: [],
     profile: {},
@@ -32,8 +30,6 @@ export const GithubProvider = ({ children }) => {
     });
 
     const { items } = await response.json();
-    // setProfiles(data);
-    // setIsLoading(true);
 
     dispatch({
       type: "SEARCH_PROFILES",
